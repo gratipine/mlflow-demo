@@ -39,6 +39,8 @@ feature_combinations = [
 
 # %% run mlflow experiment
 for feature_comb in feature_combinations:
+    
+    # create a temporary folder to hold artifacts
     artifact_location = ".mlflow_temp"
     if os.path.exists(artifact_location):
         shutil.rmtree(artifact_location)
